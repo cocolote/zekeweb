@@ -1,0 +1,113 @@
+%fl-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.home {
+  @extend %fl-container;
+  flex-direction: column;
+  padding-bottom: 50px;
+
+  .home-section1 {
+    @extend %fl-container;
+    flex-direction: row;
+    height: 86vh;
+  
+    justify-content: flex-start;
+  
+    z-index: -1;
+  
+    .left-col {
+      flex: 1;
+      background-image: url(./img/person-mountain.jpg);
+      background-size: cover;
+    }
+  
+    .my-name {
+      position: absolute;
+      top: 23vh;
+      left: 36vw;
+  
+      font-family: sans-serif;
+      font-size: 6.7vw;
+
+      border-bottom: 4px solid #f9dc00;
+      padding: 1.5rem 0;
+    }
+  
+    .right-col {
+      flex: 1.5;
+      @extend %fl-container;
+      flex-direction: column;
+      justify-content: flex-end;
+  
+      p {
+        position: relative;
+        left: 6.5vw;
+        bottom: 20px;
+        align-self: flex-start;
+        width: 38vw;
+        font-size: 1.3vw;
+        font-family: sans-serif;
+      }
+    }
+  }
+
+  .home-subtitle-section {
+    @extend %fl-container;
+    flex-direction: row;
+    padding-top: 40px;
+
+    .left-col {
+      @extend %fl-container;
+      flex-direction: row;
+      justify-content: center;
+      flex: 1;
+
+      .sub-title {
+        font-family: sans-serif;
+        font-size: 5.2vw;
+        margin-bottom: 20px;
+      }
+    }
+
+    .right-col {
+      flex: 1.5;
+    }
+  }
+
+  .home-section2 {
+    @extend %fl-container;
+    flex-direction: row;
+
+    .left-col {
+      flex: 1;
+    }
+
+    .right-col {
+      @extend %fl-container;
+      flex-direction: column;
+      flex: 2;
+    }
+  }
+
+  .skill-title {
+    font-family: sans-serif;
+    font-size: 2.3vw;
+    margin-bottom: 0;
+    
+    hr {
+      width: 2rem;
+      border: 2px solid #f9dc00;
+    }
+  }
+
+  .skill-text {
+    width: 90%;
+    font-family: sans-serif;
+    font-size: 1.2vw;
+  }
+}
