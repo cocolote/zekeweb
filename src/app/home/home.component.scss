@@ -27,7 +27,7 @@
   
     .my-name {
       position: absolute;
-      top: 30vh;
+      top: 23vh;
       left: 36vw;
       margin-bottom: 0;
   
@@ -50,13 +50,13 @@
       p {
         position: relative;
         left: 6.5vw;
-        bottom: 20px;
+        bottom: 0;
         align-self: flex-start;
         width: 38vw;
         font-size: calc(0.4rem + 1.3vw);
         font-family: sans-serif;
         text-align: justify;
-        line-height: 1.8;
+        line-height: 1.6;
       }
     }
   }
