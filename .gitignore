@@ -32,6 +32,8 @@
 npm-debug.log
 testem.log
 /typings
+*.swp
+*.swo
 
 # e2e
 /e2e/*.js
