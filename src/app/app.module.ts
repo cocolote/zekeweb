@@ -8,12 +8,18 @@ import { RoutesModule } from './routes/routes.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { BlogComponent } from './blog/blog.component';
+import { ContactmeComponent } from './contactme/contactme.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    PortfolioComponent,
+    BlogComponent,
+    ContactmeComponent
   ],
   imports: [
     BrowserModule,
